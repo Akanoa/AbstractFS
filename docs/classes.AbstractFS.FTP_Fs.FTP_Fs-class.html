@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>classes.AbstractFS.FTP_Fs.FTP_Fs</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="classes.AbstractFS-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a href="#">Cyanide</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Package&nbsp;classes ::
+        <a href="classes.AbstractFS-module.html">Package&nbsp;AbstractFS</a> ::
+        <a href="classes.AbstractFS.FTP_Fs-module.html">Module&nbsp;FTP_Fs</a> ::
+        Class&nbsp;FTP_Fs
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="classes.AbstractFS.FTP_Fs.FTP_Fs-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class FTP_Fs</h1><p class="nomargin-top"><span class="codelink"><a href="classes.AbstractFS.FTP_Fs-pysrc.html#FTP_Fs">source&nbsp;code</a></span></p>
+<center>
+<center>  <map id="uml_class_diagram_for_classes__3" name="uml_class_diagram_for_classes__3">
+<area shape="rect" id="node1_8" href="classes.AbstractFS.FTP_Fs.FTP_Fs-class.html#__init__" title="abstract class all method must be redefined in subclass" alt="" coords="17,103,359,123"/>
+<area shape="rect" id="node1_9" href="classes.AbstractFS.FTP_Fs.FTP_Fs-class.html#setCredentials" title="try to connect to FTP server" alt="" coords="17,123,359,143"/>
+<area shape="rect" id="node1_10" href="classes.AbstractFS.FTP_Fs.FTP_Fs-class.html#makedirs" title="makes tree on local FS" alt="" coords="17,143,359,163"/>
+<area shape="rect" id="node1_11" href="classes.AbstractFS.FTP_Fs.FTP_Fs-class.html#rmdirs" title="destroy tree on local FS" alt="" coords="17,163,359,183"/>
+<area shape="rect" id="node1_12" href="classes.AbstractFS.FTP_Fs.FTP_Fs-class.html#put" title="create file from stream content at desired path" alt="" coords="17,183,359,203"/>
+<area shape="rect" id="node1_13" href="classes.AbstractFS.FTP_Fs.FTP_Fs-class.html#get" title="get file content by chunk to avoid massive memory conssumption" alt="" coords="17,203,359,223"/>
+<area shape="rect" id="node1_14" href="classes.AbstractFS.FTP_Fs.FTP_Fs-class.html#delete" title="delete file on FTP server" alt="" coords="17,223,359,243"/>
+<area shape="rect" id="node1_15" href="classes.AbstractFS.FTP_Fs.FTP_Fs-class.html#getNetloc" title="classdoc" alt="" coords="17,243,359,263"/>
+<area shape="rect" id="node1" href="classes.AbstractFS.FTP_Fs.FTP_Fs-class.html" title="Handle primitive action on FTP FS" alt="" coords="5,69,371,269"/>
+<area shape="rect" id="node2" href="classes.AbstractFS.Base_Fs.Base_Fs-class.html" title="abstract class all method must be redefined in subclass handle primitives action on FS" alt="" coords="119,5,254,51"/>
+</map>
+  <img src="uml_class_diagram_for_classes__3.gif" alt='' usemap="#uml_class_diagram_for_classes__3" ismap="ismap" class="graph-without-title" />
+</center>
+</center>
+<hr />
+<p>Handle primitive action on FTP FS</p>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="classes.AbstractFS.FTP_Fs.FTP_Fs-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      abstract class all method must be redefined in subclass</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="classes.AbstractFS.FTP_Fs-pysrc.html#FTP_Fs.__init__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">bool</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="classes.AbstractFS.FTP_Fs.FTP_Fs-class.html#setCredentials" class="summary-sig-name">setCredentials</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">hostname</span>,
+        <span class="summary-sig-arg">port</span>,
+        <span class="summary-sig-arg">username</span>,
+        <span class="summary-sig-arg">password</span>)</span><br />
+      try to connect to FTP server</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="classes.AbstractFS.FTP_Fs-pysrc.html#FTP_Fs.setCredentials">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code class="link">bool</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="classes.AbstractFS.FTP_Fs.FTP_Fs-class.html#makedirs" class="summary-sig-name">makedirs</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">tree</span>)</span><br />
+      makes tree on local FS</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="classes.AbstractFS.FTP_Fs-pysrc.html#FTP_Fs.makedirs">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">bool</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="classes.AbstractFS.FTP_Fs.FTP_Fs-class.html#rmdirs" class="summary-sig-name">rmdirs</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">root_tree</span>,
+        <span class="summary-sig-arg">delete_file</span>=<span class="summary-sig-default">False</span>)</span><br />
+      destroy tree on local FS</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="classes.AbstractFS.FTP_Fs-pysrc.html#FTP_Fs.rmdirs">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">bool</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="classes.AbstractFS.FTP_Fs.FTP_Fs-class.html#put" class="summary-sig-name">put</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">filepath</span>,
+        <span class="summary-sig-arg">stream</span>)</span><br />
+      create file from stream content at desired path</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="classes.AbstractFS.FTP_Fs-pysrc.html#FTP_Fs.put">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">bool</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="classes.AbstractFS.FTP_Fs.FTP_Fs-class.html#get" class="summary-sig-name">get</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">filepath</span>,
+        <span class="summary-sig-arg">stream</span>)</span><br />
+      get file content by chunk to avoid massive memory conssumption</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="classes.AbstractFS.FTP_Fs-pysrc.html#FTP_Fs.get">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">bool</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="classes.AbstractFS.FTP_Fs.FTP_Fs-class.html#delete" class="summary-sig-name">delete</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">filepath</span>)</span><br />
+      delete file on FTP server</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="classes.AbstractFS.FTP_Fs-pysrc.html#FTP_Fs.delete">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="classes.AbstractFS.FTP_Fs.FTP_Fs-class.html#getNetloc" class="summary-sig-name">getNetloc</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">credentials</span>=<span class="summary-sig-default">None</span>)</span><br />
+      classdoc</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="classes.AbstractFS.FTP_Fs-pysrc.html#FTP_Fs.getNetloc">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Method Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-MethodDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="__init__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>)</span>
+    <br /><em class="fname">(Constructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="classes.AbstractFS.FTP_Fs-pysrc.html#FTP_Fs.__init__">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>abstract class all method must be redefined in subclass</p>
+  <dl class="fields">
+    <dt>Overrides:
+        <a href="classes.AbstractFS.Base_Fs.Base_Fs-class.html#__init__">Base_Fs.Base_Fs.__init__</a>
+        <dd><em class="note">(inherited documentation)</em></dd>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="setCredentials"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">setCredentials</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">hostname</span>,
+        <span class="sig-arg">port</span>,
+        <span class="sig-arg">username</span>,
+        <span class="sig-arg">password</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="classes.AbstractFS.FTP_Fs-pysrc.html#FTP_Fs.setCredentials">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>try to connect to FTP server</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>hostname</code></strong> (str)</li>
+        <li><strong class="pname"><code>port</code></strong> (int)</li>
+        <li><strong class="pname"><code>username</code></strong> (str)</li>
+        <li><strong class="pname"><code>password</code></strong> (str)</li>
+    </ul></dd>
+    <dt>Returns: bool</dt>
+        <dd>success or fail</dd>
+    <dt>Overrides:
+        <a href="classes.AbstractFS.Base_Fs.Base_Fs-class.html#setCredentials">Base_Fs.Base_Fs.setCredentials</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="makedirs"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">makedirs</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">tree</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="classes.AbstractFS.FTP_Fs-pysrc.html#FTP_Fs.makedirs">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>makes tree on local FS</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>tree</code></strong> (str) - absolute path</li>
+    </ul></dd>
+    <dt>Returns: <code class="link">bool</code></dt>
+        <dd>success or fail</dd>
+    <dt>Overrides:
+        <a href="classes.AbstractFS.Base_Fs.Base_Fs-class.html#makedirs">Base_Fs.Base_Fs.makedirs</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="rmdirs"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">rmdirs</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">root_tree</span>,
+        <span class="sig-arg">delete_file</span>=<span class="sig-default">False</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="classes.AbstractFS.FTP_Fs-pysrc.html#FTP_Fs.rmdirs">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>destroy tree on local FS</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>root_tree</code></strong> (str) - absolute path of root tree you want to destroy</li>
+        <li><strong class="pname"><code>delete_file</code></strong> - delete files in directory before delete it</li>
+    </ul></dd>
+    <dt>Returns: bool</dt>
+        <dd>success or fail</dd>
+    <dt>Overrides:
+        <a href="classes.AbstractFS.Base_Fs.Base_Fs-class.html#rmdirs">Base_Fs.Base_Fs.rmdirs</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="put"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">put</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">filepath</span>,
+        <span class="sig-arg">stream</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="classes.AbstractFS.FTP_Fs-pysrc.html#FTP_Fs.put">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>create file from stream content at desired path</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>filepath</code></strong> (str) - absolute destination path</li>
+        <li><strong class="pname"><code>stream</code></strong> (<a href="https://docs.python.org/2/library/stringio.html" 
+          target="_top">StringIO.StringIO</a>) - reference to stream which contents information stream</li>
+    </ul></dd>
+    <dt>Returns: bool</dt>
+        <dd>success or fail</dd>
+    <dt>Overrides:
+        <a href="classes.AbstractFS.Base_Fs.Base_Fs-class.html#put">Base_Fs.Base_Fs.put</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">filepath</span>,
+        <span class="sig-arg">stream</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="classes.AbstractFS.FTP_Fs-pysrc.html#FTP_Fs.get">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>get file content by chunk to avoid massive memory conssumption</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>filepath</code></strong> (str) - absolute path</li>
+        <li><strong class="pname"><code>stream</code></strong> (<a href="https://docs.python.org/2/library/stringio.html" 
+          target="_top">StringIO.StringIO</a>) - reference to stream which will gets content file</li>
+    </ul></dd>
+    <dt>Returns: bool</dt>
+        <dd>success or fail</dd>
+    <dt>Overrides:
+        <a href="classes.AbstractFS.Base_Fs.Base_Fs-class.html#get">Base_Fs.Base_Fs.get</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="delete"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">delete</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">filepath</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="classes.AbstractFS.FTP_Fs-pysrc.html#FTP_Fs.delete">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>delete file on FTP server</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>filepath</code></strong> - absolute path</li>
+    </ul></dd>
+    <dt>Returns: bool</dt>
+        <dd>success or fail</dd>
+    <dt>Overrides:
+        <a href="classes.AbstractFS.Base_Fs.Base_Fs-class.html#delete">Base_Fs.Base_Fs.delete</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="getNetloc"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">getNetloc</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">credentials</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="classes.AbstractFS.FTP_Fs-pysrc.html#FTP_Fs.getNetloc">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>classdoc</p>
+  <dl class="fields">
+    <dt>Overrides:
+        <a href="classes.AbstractFS.Base_Fs.Base_Fs-class.html#getNetloc">Base_Fs.Base_Fs.getNetloc</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="classes.AbstractFS-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a href="#">Cyanide</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Mon Apr 07 10:34:17 2014
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

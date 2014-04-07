@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>classes.AbstractFS.Local_Fs.Local_Fs</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="classes.AbstractFS-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a href="#">Cyanide</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Package&nbsp;classes ::
+        <a href="classes.AbstractFS-module.html">Package&nbsp;AbstractFS</a> ::
+        <a href="classes.AbstractFS.Local_Fs-module.html">Module&nbsp;Local_Fs</a> ::
+        Class&nbsp;Local_Fs
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="classes.AbstractFS.Local_Fs.Local_Fs-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class Local_Fs</h1><p class="nomargin-top"><span class="codelink"><a href="classes.AbstractFS.Local_Fs-pysrc.html#Local_Fs">source&nbsp;code</a></span></p>
+<center>
+<center>  <map id="uml_class_diagram_for_classes__5" name="uml_class_diagram_for_classes__5">
+<area shape="rect" id="node1_10" href="classes.AbstractFS.Local_Fs.Local_Fs-class.html#__init__" title="constructor" alt="" coords="69,137,305,157"/>
+<area shape="rect" id="node1_11" href="classes.AbstractFS.Local_Fs.Local_Fs-class.html#makedirs" title="makes tree on local FS" alt="" coords="69,157,305,177"/>
+<area shape="rect" id="node1_12" href="classes.AbstractFS.Local_Fs.Local_Fs-class.html#rmdirs" title="destroy tree on local FS" alt="" coords="69,177,305,197"/>
+<area shape="rect" id="node1_13" href="classes.AbstractFS.Local_Fs.Local_Fs-class.html#copy" title="copy src to dst on local FS" alt="" coords="69,197,305,217"/>
+<area shape="rect" id="node1_14" href="classes.AbstractFS.Local_Fs.Local_Fs-class.html#move" title="move src to dst on local FS" alt="" coords="69,217,305,237"/>
+<area shape="rect" id="node1_15" href="classes.AbstractFS.Local_Fs.Local_Fs-class.html#delete" title="deletes a file on local FS" alt="" coords="69,237,305,257"/>
+<area shape="rect" id="node1_16" href="classes.AbstractFS.Local_Fs.Local_Fs-class.html#get" title="get file content by chunk to avoid massive memory conssumption" alt="" coords="69,257,305,277"/>
+<area shape="rect" id="node1_17" href="classes.AbstractFS.Local_Fs.Local_Fs-class.html#put" title="create file from stream content at desired path" alt="" coords="69,277,305,297"/>
+<area shape="rect" id="node1" href="classes.AbstractFS.Local_Fs.Local_Fs-class.html" title="Handle primitive action on local FS" alt="" coords="57,104,317,304"/>
+<area shape="rect" id="node2_18" href="classes.AbstractFS.Base_Fs.Base_Fs-class.html#setCredentials" title="abstract method, must be redefined in inheritance classes" alt="" coords="17,39,359,59"/>
+<area shape="rect" id="node2_19" href="classes.AbstractFS.Base_Fs.Base_Fs-class.html#getNetloc" title="abstract method, must be redefined in inheritance classes" alt="" coords="17,59,359,79"/>
+<area shape="rect" id="node2" href="classes.AbstractFS.Base_Fs.Base_Fs-class.html" title="abstract class all method must be redefined in subclass handle primitives action on FS" alt="" coords="5,5,371,85"/>
+</map>
+  <img src="uml_class_diagram_for_classes__5.gif" alt='' usemap="#uml_class_diagram_for_classes__5" ismap="ismap" class="graph-without-title" />
+</center>
+</center>
+<hr />
+<p>Handle primitive action on local FS</p>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="classes.AbstractFS.Local_Fs.Local_Fs-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      constructor</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="classes.AbstractFS.Local_Fs-pysrc.html#Local_Fs.__init__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code class="link">bool</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="classes.AbstractFS.Local_Fs.Local_Fs-class.html#makedirs" class="summary-sig-name">makedirs</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">tree</span>)</span><br />
+      makes tree on local FS</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="classes.AbstractFS.Local_Fs-pysrc.html#Local_Fs.makedirs">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">bool</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="classes.AbstractFS.Local_Fs.Local_Fs-class.html#rmdirs" class="summary-sig-name">rmdirs</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">root_tree</span>,
+        <span class="summary-sig-arg">delete_file</span>=<span class="summary-sig-default">False</span>)</span><br />
+      destroy tree on local FS</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="classes.AbstractFS.Local_Fs-pysrc.html#Local_Fs.rmdirs">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">bool</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="classes.AbstractFS.Local_Fs.Local_Fs-class.html#copy" class="summary-sig-name">copy</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">src</span>,
+        <span class="summary-sig-arg">dst</span>)</span><br />
+      copy src to dst on local FS</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="classes.AbstractFS.Local_Fs-pysrc.html#Local_Fs.copy">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">bool</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="classes.AbstractFS.Local_Fs.Local_Fs-class.html#move" class="summary-sig-name">move</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">src</span>,
+        <span class="summary-sig-arg">dst</span>)</span><br />
+      move src to dst on local FS</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="classes.AbstractFS.Local_Fs-pysrc.html#Local_Fs.move">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">bool</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="classes.AbstractFS.Local_Fs.Local_Fs-class.html#delete" class="summary-sig-name">delete</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">filepath</span>)</span><br />
+      deletes a file on local FS</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="classes.AbstractFS.Local_Fs-pysrc.html#Local_Fs.delete">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">bool</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="classes.AbstractFS.Local_Fs.Local_Fs-class.html#get" class="summary-sig-name">get</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">filepath</span>,
+        <span class="summary-sig-arg">stream</span>)</span><br />
+      get file content by chunk to avoid massive memory conssumption</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="classes.AbstractFS.Local_Fs-pysrc.html#Local_Fs.get">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">bool</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="classes.AbstractFS.Local_Fs.Local_Fs-class.html#put" class="summary-sig-name">put</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">filepath</span>,
+        <span class="summary-sig-arg">stream</span>)</span><br />
+      create file from stream content at desired path</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="classes.AbstractFS.Local_Fs-pysrc.html#Local_Fs.put">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="classes.AbstractFS.Base_Fs.Base_Fs-class.html">Base_Fs.Base_Fs</a></code></b>:
+      <code><a href="classes.AbstractFS.Base_Fs.Base_Fs-class.html#getNetloc">getNetloc</a></code>,
+      <code><a href="classes.AbstractFS.Base_Fs.Base_Fs-class.html#setCredentials">setCredentials</a></code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Method Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-MethodDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="__init__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>)</span>
+    <br /><em class="fname">(Constructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="classes.AbstractFS.Local_Fs-pysrc.html#Local_Fs.__init__">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>constructor</p>
+  <dl class="fields">
+    <dt>Overrides:
+        <a href="classes.AbstractFS.Base_Fs.Base_Fs-class.html#__init__">Base_Fs.Base_Fs.__init__</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="makedirs"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">makedirs</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">tree</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="classes.AbstractFS.Local_Fs-pysrc.html#Local_Fs.makedirs">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>makes tree on local FS</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>tree</code></strong> (str) - absolute path</li>
+    </ul></dd>
+    <dt>Returns: <code class="link">bool</code></dt>
+        <dd>success or failed</dd>
+    <dt>Overrides:
+        <a href="classes.AbstractFS.Base_Fs.Base_Fs-class.html#makedirs">Base_Fs.Base_Fs.makedirs</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="rmdirs"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">rmdirs</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">root_tree</span>,
+        <span class="sig-arg">delete_file</span>=<span class="sig-default">False</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="classes.AbstractFS.Local_Fs-pysrc.html#Local_Fs.rmdirs">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>destroy tree on local FS</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>root_tree</code></strong> (str) - absolute path of root tree you want to destroy</li>
+        <li><strong class="pname"><code>delete_file</code></strong> - delete files in directory before delete it</li>
+    </ul></dd>
+    <dt>Returns: bool</dt>
+        <dd>success or failed</dd>
+    <dt>Overrides:
+        <a href="classes.AbstractFS.Base_Fs.Base_Fs-class.html#rmdirs">Base_Fs.Base_Fs.rmdirs</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="copy"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">copy</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">src</span>,
+        <span class="sig-arg">dst</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="classes.AbstractFS.Local_Fs-pysrc.html#Local_Fs.copy">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>copy src to dst on local FS</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>src</code></strong> (str) - absolute path</li>
+        <li><strong class="pname"><code>dst</code></strong> (str) - absolute path</li>
+    </ul></dd>
+    <dt>Returns: bool</dt>
+        <dd>success or failed</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="move"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">move</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">src</span>,
+        <span class="sig-arg">dst</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="classes.AbstractFS.Local_Fs-pysrc.html#Local_Fs.move">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>move src to dst on local FS</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>src</code></strong> (str) - absolute path</li>
+        <li><strong class="pname"><code>dst</code></strong> (str) - absolute path</li>
+    </ul></dd>
+    <dt>Returns: bool</dt>
+        <dd>success or failed</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="delete"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">delete</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">filepath</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="classes.AbstractFS.Local_Fs-pysrc.html#Local_Fs.delete">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>deletes a file on local FS</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>filepath</code></strong> (str) - absolute path</li>
+    </ul></dd>
+    <dt>Returns: bool</dt>
+        <dd>success or failed</dd>
+    <dt>Overrides:
+        <a href="classes.AbstractFS.Base_Fs.Base_Fs-class.html#delete">Base_Fs.Base_Fs.delete</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">filepath</span>,
+        <span class="sig-arg">stream</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="classes.AbstractFS.Local_Fs-pysrc.html#Local_Fs.get">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>get file content by chunk to avoid massive memory conssumption</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>filepath</code></strong> (str) - absolute path</li>
+        <li><strong class="pname"><code>stream</code></strong> (<a href="https://docs.python.org/2/library/stringio.html" 
+          target="_top">StringIO.StringIO</a>) - reference to stream which will gets content file</li>
+    </ul></dd>
+    <dt>Returns: bool</dt>
+        <dd>success or failed</dd>
+    <dt>Overrides:
+        <a href="classes.AbstractFS.Base_Fs.Base_Fs-class.html#get">Base_Fs.Base_Fs.get</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="put"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">put</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">filepath</span>,
+        <span class="sig-arg">stream</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="classes.AbstractFS.Local_Fs-pysrc.html#Local_Fs.put">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>create file from stream content at desired path</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>filepath</code></strong> (str) - absolute destination path</li>
+        <li><strong class="pname"><code>stream</code></strong> (<a href="https://docs.python.org/2/library/stringio.html" 
+          target="_top">StringIO.StringIO</a>) - reference to stream which contents information stream</li>
+    </ul></dd>
+    <dt>Returns: bool</dt>
+        <dd>success or failed</dd>
+    <dt>Overrides:
+        <a href="classes.AbstractFS.Base_Fs.Base_Fs-class.html#put">Base_Fs.Base_Fs.put</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="classes.AbstractFS-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a href="#">Cyanide</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Mon Apr 07 10:34:17 2014
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>
